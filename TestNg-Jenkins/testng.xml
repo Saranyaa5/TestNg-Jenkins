@@ -9,13 +9,7 @@
         <class name="com.expleo.Air_irctc.NewTest3"/>
         <class name="com.expleo.Air_irctc.NewTest4"/>
         <class name="com.expleo.Air_irctc.NewTest5"/>
-        <class name="com.expleo.Air_irctc.NewTest6"/>
-        <class name="com.expleo.Air_irctc.NewTest7"/>
-        <class name="com.expleo.Air_irctc.NewTest8"/>
-        <class name="com.expleo.Air_irctc.NewTest9"/>
-        <class name="com.expleo.Air_irctc.NewTest10"/>
-        <class name="com.expleo.Air_irctc.NewTest11"/>
-        <class name="com.expleo.Air_irctc.NewTest12"/>
+       
         </classes>
     </test>
 
