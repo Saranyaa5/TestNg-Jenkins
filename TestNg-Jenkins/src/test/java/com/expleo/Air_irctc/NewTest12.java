@@ -24,7 +24,7 @@ public class NewTest12 {
 //        driver.findElement(By.xpath("//div[@class=\"oxd-input-group oxd-input-field-bottom-space\"]//div[2]//input[@name=\"password\"]")).sendKeys("admin123");
 //        driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button")).click();
 
-    	driver.findElement(By.cssSelector("input[name='username']")).sendKeys("Admin");
+    	driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Admin");
     	driver.findElement(By.cssSelector("input[name='password']")).sendKeys("admin123");
     	driver.findElement(By.cssSelector("button[type='submit']")).click();
 

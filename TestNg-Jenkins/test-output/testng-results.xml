@@ -1,25 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-24T06:24:34 IST" name="Suite" finished-at="2025-03-24T06:24:34 IST" duration-ms="122">
+  <suite started-at="2025-03-24T19:56:19 IST" name="Default suite" finished-at="2025-03-24T19:56:19 IST" duration-ms="107">
     <groups>
     </groups>
-    <test started-at="2025-03-24T06:24:34 IST" name="Test" finished-at="2025-03-24T06:24:34 IST" duration-ms="122">
-      <class name="com.expleo.Air_irctc.NewTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.expleo.Air_irctc.NewTest@72035809]" started-at="2025-03-24T06:24:34 IST" name="beforeTest" finished-at="2025-03-24T06:24:34 IST" duration-ms="21" status="PASS">
+    <test started-at="2025-03-24T19:56:19 IST" name="Default test" finished-at="2025-03-24T19:56:19 IST" duration-ms="107">
+      <class name="com.expleo.Air_irctc.NewTest12">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.expleo.Air_irctc.NewTest12@53045c6c]" started-at="2025-03-24T19:56:19 IST" name="beforeTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1742826379324" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\saran\AppData\Local\Temp\testng-eclipse--1456246355\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\saran\AppData\Local\Temp\testng-eclipse--1456246355\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="AssertionExample()[pri:0, instance:com.expleo.Air_irctc.NewTest@72035809]" started-at="2025-03-24T06:24:34 IST" name="AssertionExample" finished-at="2025-03-24T06:24:34 IST" duration-ms="10" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.expleo.Air_irctc.NewTest12@53045c6c]" started-at="2025-03-24T19:56:19 IST" name="login" finished-at="2025-03-24T19:56:19 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\saran\AppData\Local\Temp\testng-eclipse--1456246355\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\saran\AppData\Local\Temp\testng-eclipse--1456246355\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AssertionExample -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.expleo.Air_irctc.NewTest@72035809]" started-at="2025-03-24T06:24:34 IST" name="afterTest" finished-at="2025-03-24T06:24:34 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.expleo.Air_irctc.NewTest12@53045c6c]" started-at="2025-03-24T19:56:19 IST" name="afterTest" finished-at="2025-03-24T19:56:19 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.expleo.Air_irctc.NewTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.expleo.Air_irctc.NewTest12 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

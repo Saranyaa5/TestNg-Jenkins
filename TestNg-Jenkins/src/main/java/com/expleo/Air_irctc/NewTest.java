@@ -10,6 +10,8 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
 public class NewTest {
+    public ChromeDriver driver;
+    public WebDriverWait wait;
 
     @Test
     public void AssertionExample() {
