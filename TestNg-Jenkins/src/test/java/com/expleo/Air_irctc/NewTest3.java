@@ -21,6 +21,7 @@ public class NewTest3 {
         String actual = driver.getTitle();
 //        Assert.assertEquals(actual, expected, "Title does not match!");
         Assert.assertFalse(expected.equals(actual), "Title is not matching!");
+        System.out.println("test3 is completed successfully");
 
     }
 
