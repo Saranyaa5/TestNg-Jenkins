@@ -14,7 +14,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class NewTest5 {
+public class NewTestMain {
     public WebDriver driver;
     public WebDriverWait wait;
 

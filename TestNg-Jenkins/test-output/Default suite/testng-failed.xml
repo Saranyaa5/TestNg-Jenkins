@@ -5,9 +5,9 @@
     <classes>
       <class name="com.expleo.Air_irctc.NewTest12">
         <methods>
-          <include name="login"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
+          <include name="Userlogin"/>
         </methods>
       </class> <!-- com.expleo.Air_irctc.NewTest12 -->
     </classes>
