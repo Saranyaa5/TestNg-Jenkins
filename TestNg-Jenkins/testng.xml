@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite"  thread-count="2">
+<suite name="Suite" thread-count="2">
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.expleo.Air_irctc.NewTest12"/>
+        </classes>
+    </test>
 
-   
-
-<test name="ChromeTest">
-<parameter name="browser" value="chrome"/>
-<classes>
-   <class name="com.expleo.Air_irctc.NewTest12"/>
-</classes>
-</test>
-
-<test name="EdgeTest">
-<parameter name="browser" value="edge"/>
-<classes>
-   <class name="com.expleo.Air_irctc.NewTest12"/>
-</classes>
-</test>
+    <test name="EdgeTest">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="com.expleo.Air_irctc.NewTest12"/>
+        </classes>
+    </test>
 </suite>

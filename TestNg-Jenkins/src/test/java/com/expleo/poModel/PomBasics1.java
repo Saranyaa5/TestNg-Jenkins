@@ -7,45 +7,60 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class PomBasics1 {
-    public WebDriver driver;
+    WebDriver driver;
+    GooglePage googlePage;
 
-    @FindBy(xpath="//input[@name='q']") 
-    private WebElement searchBox;
-  
-    public void searchFor(String text) {
-        searchBox.sendKeys(text);
-        searchBox.submit();
-    }
-    
-    @Test
-    public void homepage() {
-        String expected_title = "Google";
-        String title = driver.getTitle();
-        Assert.assertEquals(title, expected_title, "Not on the Google homepage");
+    // ======== PAGE OBJECT CLASS ==========
+    public static class GooglePage {
+        WebDriver driver;
+
+        @FindBy(name = "q")
+        private WebElement searchBox;
+
+        public GooglePage(WebDriver driver) {
+            this.driver = driver;
+            PageFactory.initElements(driver, this);
+        }
+
+        public void searchFor(String query) {
+            searchBox.sendKeys(query);
+            searchBox.submit();
+        }
     }
 
+    // ======== TEST CLASS ==========
     @BeforeTest
-    public void BeforeTest() { 
-        
-        ChromeOptions option = new ChromeOptions();
-        option.addArguments("--headless");
-        driver = new ChromeDriver(option); 
+    public void setup() {
+        ChromeOptions options = new ChromeOptions();
+        // options.addArguments("--headless"); // Uncomment for headless execution
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.get("https://www.google.co.in");
-       
-        PageFactory.initElements(driver, this);
+
+        googlePage = new GooglePage(driver); // Initialize Page Object
+    }
+
+    @Test(priority = 1)
+    public void verifyHomepageTitle() {
+        String expectedTitle = "Google";
+        String actualTitle = driver.getTitle();
+        Assert.assertEquals(actualTitle, expectedTitle, "Not on the Google homepage");
+    }
+
+    @Test(priority = 2)
+    public void searchTest() {
+        googlePage.searchFor("Expleo");
+        Assert.assertTrue(driver.getTitle().contains("Expleo"), "Search result title does not match.");
     }
 
     @AfterTest
-    public void AfterTest() {
-    	System.out.println("successfull");
+    public void teardown() {
         if (driver != null) {
             driver.quit();
         }
+        System.out.println("Test Execution Completed Successfully!");
     }
 }
