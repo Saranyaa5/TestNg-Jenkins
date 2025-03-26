@@ -134,7 +134,7 @@ public class NewTest12 {
         // Get the actual text of the logout link
         String actual = logoutLink.getText();
 
-        // Expected text
+        // Expected text**///
         String expected = "Logout";
         Assert.assertEquals(actual, expected, "Login not successful!");
     }

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.expleo.Air_irctc.NewTest12">
+      <class name="com.expleo.Air_irctc.DataProviderDemo3">
         <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="Userlogin"/>
+          <include name="afterMethod"/>
+          <include name="search" invocation-numbers="0 1 2 3"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.expleo.Air_irctc.NewTest12 -->
+      </class> <!-- com.expleo.Air_irctc.DataProviderDemo3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
