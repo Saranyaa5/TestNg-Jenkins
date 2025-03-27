@@ -24,7 +24,7 @@ public class NewTest12 {
     @Test
     public void Userlogin() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement username = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='username'])));
+        WebElement username = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='username']")));
         username.sendKeys("Admin");
 
         driver.findElement(By.xpath("//input[@name='password']")).sendKeys("admin123");
